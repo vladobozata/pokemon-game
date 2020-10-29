@@ -35,9 +35,8 @@ export default class SelectionScene extends PIXI.Container  {
             let card = cards[i];
             card.x += offsetX;
             card.y += offsetY;
-            card.on('click', event => this._selectCard_(event.target));
+            card.on('pointerdown', event => this._selectCard_(event.target));
 
-            // this.cardsLoaded.push(card);
             this.cardsLoaded.addChild(card);        
 
             let next = i+1;

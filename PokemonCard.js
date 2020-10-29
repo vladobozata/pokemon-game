@@ -11,6 +11,7 @@ export default class PokemonCard extends PIXI.Sprite {
 
         pokemon_back.x = (cardWidth - pokemonWidth)/2; 
         pokemon_instance.x += (cardWidth - pokemonWidth)/2; 
+
         this.text_style = this.generateStyle();
         this.cardBackground = this.generateCard(cardWidth, cardHeight);
 
@@ -99,6 +100,7 @@ export default class PokemonCard extends PIXI.Sprite {
 
         return {"front": frontTags, "back": backTags};
     }
+
 
     generateCard(width, height) {
         let card = new PIXI.Graphics();

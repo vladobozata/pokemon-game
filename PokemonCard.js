@@ -1,4 +1,3 @@
-import style from './UI/CustomStyle.js'
 export default class PokemonCard extends PIXI.Sprite {
     constructor(pokemon_instance) {
         super();
@@ -38,8 +37,6 @@ export default class PokemonCard extends PIXI.Sprite {
         }
 
         this.interactive = true;
-        // this.on('click', this.flipCard);
-
     }
     flipCard()  {
         if (this.view === "front") {
